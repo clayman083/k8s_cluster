@@ -1,0 +1,7 @@
+---
+
+- name: Join cluster
+  shell: "{{ join_command }}"  # noqa 305
+  args:
+    chdir: $HOME
+    creates: node_joined.txt
